@@ -1,0 +1,217 @@
+/* === Breakpoints === */
+/* === Fonts === */
+@font-face {
+  font-family: "Futura-PT-Light";
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  src: url("https://cdn.shopify.com/s/files/1/0411/8246/2106/files/Futura-PT_Light.otf?v=1679595988");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Futura-PT-Book";
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  src: url("https://cdn.shopify.com/s/files/1/0411/8246/2106/files/Futura-PT_Book.otf?v=1676921829");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Futura-PT-Bold";
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  src: url("https://cdn.shopify.com/s/files/1/0411/8246/2106/files/futura-pt_bold.woff?v=1692918174");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GT-Eesti-Ultra-Light";
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  src: url("https://cdn.shopify.com/s/files/1/0411/8246/2106/files/GT-Eesti-Display-Ultra-Light.woff?v=1692916782");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GT-Eesti";
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  src: url("https://cdn.shopify.com/s/files/1/0411/8246/2106/files/GT-Eesti-Display-Ultra-Light.woff?v=1692916782");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GT-Eesti-Bold";
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  src: url("https://cdn.shopify.com/s/files/1/0411/8246/2106/files/GT-Eesti-Bold.woff2?v=1688427367");
+  font-display: swap;
+}
+/* === Colors === */
+/* === Font Sizes === */
+/* === Media Queries === */
+/* 
+Usage example:
+    .my-element {
+        font-size: 16px;
+        @include bp-max-sm {
+            font-size: 12px;
+        }
+    }
+
+Breakpoints:
+    $bp-sm: 578px;
+    $bp-md: 768px;
+    $bp-lg: 992px;
+    $bp-xl: 1200px;
+    $bp-xxl: 1440px;
+*/
+/** 1.0 mixins **/
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .--desktop {
+    display: none;
+  }
+}
+
+.c-accordian__menu li:hover {
+  color: #a88275;
+}
+
+.PDP-helpful_resources {
+  text-decoration: underline;
+}
+
+.c-accordian__menu {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.c-accordian__menu .accordian__menu_items {
+  transition: height 0.4s ease-in-out;
+  will-change: height;
+  width: 100%;
+  max-width: 371px;
+  overflow: hidden;
+  border-bottom: 0.5px solid #a88275;
+  position: relative;
+  height: 48px;
+}
+@media (max-width: 768px) {
+  .c-accordian__menu .accordian__menu_items {
+    height: 50px;
+  }
+}
+.c-accordian__menu .nav_state {
+  border-radius: 50%;
+  background: rgba(80, 44, 30, 0.1);
+  position: absolute;
+  top: 14px;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+  transform: rotate(0deg);
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transform: rotate(0deg);
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.c-accordian__menu .nav_state svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s ease-in-out;
+}
+.c-accordian__menu .menu_item + * {
+  padding: 10px 0;
+}
+.c-accordian__menu h3,
+.c-accordian__menu .menu_item {
+  font-family: "Futura-PT-Bold", sans-serif;
+  font-size: 16px;
+  padding: 10px 0;
+  margin: 0;
+  width: 100%;
+  padding: 13px 0;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .c-accordian__menu h3,
+  .c-accordian__menu .menu_item {
+    letter-spacing: 0.03em;
+    font-size: 14px;
+  }
+}
+.c-accordian__menu li,
+.c-accordian__menu p {
+  display: block;
+  line-height: 25px;
+  font-size: 16px;
+  font-family: "Futura-PT-Book";
+}
+@media (max-width: 578px) {
+  .c-accordian__menu li,
+  .c-accordian__menu p {
+    font-size: 12px;
+  }
+}
+
+.specifications {
+  padding-top: 15px;
+}
+
+.specifications-container {
+  display: block;
+  border-radius: 10px;
+  border: 0.5px solid var(--web-tan-a-88275, #a88275);
+  overflow: hidden;
+}
+.specifications-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.specifications-container tr:nth-child(even) {
+  background: #fdf8f4;
+}
+.specifications-container th,
+.specifications-container td {
+  padding-block-start: 5px;
+  padding-block-end: 5px;
+  padding-inline-end: 0px;
+  font-size: 14px;
+}
+.specifications-container th:first-child {
+  padding-inline-start: 16px;
+  font-family: "Futura-PT-Bold", sans-serif;
+}
+@media (max-width: 578px) {
+  .specifications-container th,
+  .specifications-container td {
+    font-size: 12px;
+  }
+  .specifications-container th:first-child {
+    padding-inline-start: 5px;
+  }
+}

@@ -1,0 +1,92 @@
+@use '_variables' as *;
+
+/* === Media Queries === */
+/* 
+Usage example:
+    .my-element {
+        font-size: 16px;
+        @include bp-max-sm {
+            font-size: 12px;
+        }
+    }
+
+Breakpoints:
+    $bp-sm: 578px;
+    $bp-md: 768px;
+    $bp-lg: 992px;
+    $bp-xl: 1200px;
+    $bp-xxl: 1440px;
+*/
+@mixin bp-max-xs {
+    @media (max-width: $bp-xs) {
+        @content;
+    }
+}
+@mixin bp-max-sm {
+    @media (max-width: $bp-sm) {
+        @content;
+    }
+}
+@mixin bp-max-md {
+    @media (max-width: $bp-md) {
+        @content;
+    }
+}
+@mixin bp-max-lg {
+    @media (max-width: $bp-lg) {
+        @content;
+    }
+}
+@mixin bp-max-xl {
+    @media (max-width: $bp-xl) {
+        @content;
+    }
+}
+@mixin bp-max-xxl {
+    @media (max-width: $bp-xxl) {
+        @content;
+    }
+}
+@mixin bp-min-xs {
+    @media (min-width: $bp-xs) {
+        @content;
+    }
+}
+@mixin bp-min-sm {
+    @media (min-width: $bp-sm) {
+        @content;
+    }
+}
+@mixin bp-min-md {
+    @media (min-width: $bp-md) {
+        @content;
+    }
+}
+@mixin bp-min-lg {
+    @media (min-width: $bp-lg) {
+        @content;
+    }
+}
+@mixin bp-min-xl {
+    @media (min-width: $bp-xl) {
+        @content;
+    }
+}
+@mixin bp-min-xxl {
+    @media (min-width: $bp-xxl) {
+        @content;
+    }
+}
+
+/** 1.0 mixins **/
+@mixin breakpointMax($size) {
+    @media (max-width: $size) {
+        @content;
+    }
+}
+
+@mixin breakpointMin($size) {
+    @media (min-width: $size) {
+        @content;
+    }
+}

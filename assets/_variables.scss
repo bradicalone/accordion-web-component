@@ -1,0 +1,119 @@
+/* === Breakpoints === */
+$bp-xs: 450px;
+$bp-sm: 578px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+$bp-xxl: 1440px;
+// 1.0
+$breakpoint-xxs: 0px;
+$breakpoint-xs: 600px;
+$breakpoint-sm: 767px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+$breakpoint-xl: 1440px;
+
+
+/* === Fonts === */
+@font-face {
+    font-family: 'Futura-PT-Light';
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.05em;
+    src: url('https://cdn.shopify.com/s/files/1/0411/8246/2106/files/Futura-PT_Light.otf?v=1679595988');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Futura-PT-Book';
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    src: url('https://cdn.shopify.com/s/files/1/0411/8246/2106/files/Futura-PT_Book.otf?v=1676921829');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura-PT-Bold';
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.05em;
+    src: url('https://cdn.shopify.com/s/files/1/0411/8246/2106/files/futura-pt_bold.woff?v=1692918174');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GT-Eesti-Ultra-Light';
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: .05em;
+    src: url('https://cdn.shopify.com/s/files/1/0411/8246/2106/files/GT-Eesti-Display-Ultra-Light.woff?v=1692916782');
+    font-display: swap;
+}
+@font-face {
+    font-family: "GT-Eesti";
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: .05em;
+    src: url('https://cdn.shopify.com/s/files/1/0411/8246/2106/files/GT-Eesti-Display-Ultra-Light.woff?v=1692916782');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GT-Eesti-Bold';
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: .05em;
+    src: url('https://cdn.shopify.com/s/files/1/0411/8246/2106/files/GT-Eesti-Bold.woff2?v=1688427367');
+    font-display: swap;
+}
+
+// Primary Font
+$ff-primary: 'GT-Eesti-Ultra-Light', sans-serif;
+$ff-primary-500: 'GT-Eesti-Bold', sans-serif;
+// Secondary Font
+// $ff-secondary-100: 'Futura-PT-Light', sans-serif;
+$ff-secondary: 'Futura-PT-Book', sans-serif;
+$ff-secondary-500: 'Futura-PT-Bold', sans-serif;
+
+
+/* === Colors === */
+// Essentials
+$clr-essentials-500: #30261d; // umber
+$clr-essentials-400: #502c1e; // cocoa
+$clr-essentials-300: #805a50; // toffee
+$clr-essentials-200: #a88275; // tan
+$clr-essentials-100: #ceb4a8; // buff
+
+// Accents
+$clr-accents-500: #F94D00; // new cta
+$clr-accents-400: #7b423f; // amber
+$clr-accents-300: #a65858; // raspberry
+$clr-accents-200: #cea59b; // blush
+$clr-accents-100: #ebccbe; // rose
+$clr-accents-400: #E55D5A;  // candy apple
+// Neutrals
+$clr-neutrals-400: #f0e4da; // beige
+$clr-neutrals-300: #f9f1ef; // unicorn
+$clr-neutrals-200: #fdf8f4; // cream
+$clr-neutrals-100: #ffffff; // white
+// Semantic
+// success
+// warning
+// error
+// TBD
+
+
+/* === Font Sizes === */
+// Small
+$fs-sm-100: 8px;
+$fs-sm-200: 10px;
+$fs-sm-300: 12px;
+$fs-sm-400: 14px;
+// Normal
+$fs-100: 16px;
+$fs-200: 18px;
+$fs-300: 22px;
+$fs-400: 30px;
+// Large
+$fs-lg-100: 36px;
+$fs-lg-200: 40px;
+$fs-lg-300: 55px;
+$fs-lg-400: 70px;

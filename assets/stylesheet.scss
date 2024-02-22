@@ -1,0 +1,150 @@
+@use "_variables" as *;
+@use "_mixins" as *;
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.--desktop {
+    @include bp-max-md {
+        display: none;
+    }
+}
+
+.c-accordian__menu li:hover {
+    color: #a88275;
+}
+
+.PDP-helpful_resources {
+    text-decoration: underline;
+}
+
+.c-accordian__menu {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+    .accordian__menu_items {
+        transition: height 0.4s ease-in-out;
+        will-change: height;
+        width: 100%;
+        max-width: 371px;
+        overflow: hidden;
+        border-bottom: 0.5px solid #a88275;
+        position: relative;
+
+        @include bp-max-md {
+            height: 50px;
+        }
+        height: 48px;
+    }
+
+    .nav_state {
+        border-radius: 50%;
+        background: rgba(80, 44, 30, 0.1);
+        position: absolute;
+        top: 14px;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        pointer-events: none;
+        transform: rotate(0deg);
+        transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        transform: rotate(0deg);
+        transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: transform 0.5s ease-in-out;
+        }
+    }
+
+    .menu_item + * {
+        padding: 10px 0;
+    }
+
+    h3,
+    .menu_item {
+        font-family: $ff-secondary-500;
+        font-size: 16px;
+        padding: 10px 0;
+        margin: 0;
+        width: 100%;
+        padding: 13px 0;
+        text-transform: lowercase;
+        cursor: pointer;
+
+        @include bp-max-md {
+            letter-spacing: 0.03em;
+            font-size: 14px;
+        }
+    }
+
+    li,
+    p {
+        display: block;
+        line-height: 25px;
+        font-size: 16px;
+        font-family: "Futura-PT-Book";
+
+        @include bp-max-sm {
+            font-size: 12px;
+        }
+    }
+}
+
+.specifications {
+    padding-top: 15px;
+}
+.specifications-container {
+    display: block;
+    border-radius: 10px;
+    border: 0.5px solid var(--web-tan-a-88275, #a88275);
+    overflow: hidden;
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    tr:nth-child(even) {
+        background: $clr-neutrals-200;
+    }
+    th,
+    td {
+        padding-block-start: 5px;
+        padding-block-end: 5px;
+        padding-inline-end: 0px;
+        font-size: 14px;
+    }
+    th:first-child {
+        padding-inline-start: 16px;
+        font-family: $ff-secondary-500;
+    }
+    @include bp-max-sm {
+        th,
+        td {
+            font-size: 12px;
+        }
+        th:first-child {
+            padding-inline-start: 5px;
+        }
+    }
+}
