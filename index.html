@@ -1,129 +1,165 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-
-    <title>Accordion</title>
-    <meta name="description" content="Vanilla JS Accordion">
-    <meta name="author" content="brad-joshua.com">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/stylesheet.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-
-
-</head>
-</body>
-    <div class="container">
-        <accordian-nav class="c-accordian__menu">
-            <div class="accordian__menu_items Product__details">
-                <h3 class="menu_item">made better.&#8482;</h3>
-                <div>
-                    <span>
-                        <div class="Product__made__better">
-                            <span>Material: glass 
-
-                                Dimensions: 1.5 in (w) x 5.2 in (h) / 3.8 cm (w) x  13.2 cm (h)
-                                
-                                Capacity: 1.7 oz / 50 ml
-                                
-                                Shipping Restrictions: None
-                            </span>
-                        </div>
+    <head>
+        <meta charset="utf-8" />
+        <title>Accordion Component</title>
+        <meta name="description" content="Vanilla JS Accordion" />
+        <meta name="author" content="brad-joshua.com"/>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="assets/stylesheet.css" />
+    </head>
+    <body>
+        <div class="container">
+            <accordian-nav class="c-accordian__menu">
+                <div class="accordian__menu_items Product__details">
+                    <h3 class="menu_item">made better.&#8482;</h3>
+                    <div>
+                        <span>
+                            <div class="Product__made__better">
+                                <span
+                                    >Material: glass Dimensions: 1.5 in (w) x
+                                    5.2 in (h) / 3.8 cm (w) x 13.2 cm (h)
+                                    Capacity: 1.7 oz / 50 ml Shipping
+                                    Restrictions: None
+                                </span>
+                            </div>
+                        </span>
+                    </div>
+                    <span class="nav_state">
+                        <svg
+                            width="20"
+                            height="21"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                        >
+                            <path
+                                d="M5.74023 8.17773L9.76508 12.2026L13.7899 8.17773"
+                                stroke="#30261D"
+                            />
+                        </svg>
                     </span>
                 </div>
-                <span class="nav_state">
-                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
-                        <path d="M5.74023 8.17773L9.76508 12.2026L13.7899 8.17773" stroke="#30261D"/>
-                    </svg>
-                </span>
-            </div>
-    
                 <div class="accordian__menu_items Product__details">
                     <h3 class="menu_item --open">more details.</h3>
                     <div>
                         <span>
-                            <span>
-                                Material: glass <br>
-                                <br>
-                                Dimensions: 1.5 in (w) x 5.2 in (h) / 3.8 cm (w) x  13.2 cm (h)<br>
-                                <br>
-                                Capacity: 1.7 oz / 50 ml<br>
-                                <br>
-                                Shipping Restrictions: None
-                            </span>
+                            Material: glass <br />
+                            <br />
+                            Dimensions: 1.5 in (w) x 5.2 in (h) / 3.8 cm (w) x
+                            13.2 cm (h)<br />
+                            <br />
+                            Capacity: 1.7 oz / 50 ml<br />
+                            <br />
+                            Shipping Restrictions: None
                         </span>
                         <div class="specifications">
                             <span class="specifications-container">
                                 <table>
-                                        <tbody>
+                                    <tbody>
                                         <tr>
                                             <th scope="row">inner diameter</th>
                                             <td>2.79in</td>
                                             <td>7.1cm</td>
                                         </tr>
-                                        </tbody>
+                                    </tbody>
                                 </table>
                             </span>
                         </div>
                     </div>
                     <span class="nav_state">
-                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
-                            <path d="M5.74023 8.17773L9.76508 12.2026L13.7899 8.17773" stroke="#30261D"/>
+                        <svg
+                            width="20"
+                            height="21"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                        >
+                            <path
+                                d="M5.74023 8.17773L9.76508 12.2026L13.7899 8.17773"
+                                stroke="#30261D"
+                            />
                         </svg>
                     </span>
                 </div>
-
-            <div class="accordian__menu_items">
-                <h3 class="menu_item --open">perfect matches.</h3>
-                <div>
-                    <span>
-                        ** perfect matches links here **
+                <div class="accordian__menu_items">
+                    <h3 class="menu_item --open">perfect matches.</h3>
+                    <div>
+                        <span> ** perfect matches links here ** </span>
+                    </div>
+                    <span class="nav_state">
+                        <svg
+                            width="20"
+                            height="21"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                        >
+                            <path
+                                d="M5.74023 8.17773L9.76508 12.2026L13.7899 8.17773"
+                                stroke="#30261D"
+                            />
+                        </svg>
                     </span>
                 </div>
-                <span class="nav_state">
-                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
-                        <path d="M5.74023 8.17773L9.76508 12.2026L13.7899 8.17773" stroke="#30261D"/>
-                    </svg>
-                </span>
-            </div>
-
                 <div class="accordian__menu_items">
                     <h3 class="menu_item">helpful resources.</h3>
-                    <div class="PDP-helpful_resources">
+                    <div>
                         <p>
-                            <a href="https://makesy.com/blogs/news/psa-start-selling-room-sprays-stat?_pos=1&amp;_psq=room+spray&amp;_ss=e&amp;_v=1.0&amp;_gl=1*120pcjn*_ga*NTk2Nzk5NTE0LjE3MDc0Mzk3NDE.*_ga_G4SKKQD55B*MTcwODYxMTQ1Ny41NC4xLjE3MDg2MTcxNDAuNC4wLjA.">How to Start Selling Room Sprays</a>
+                            <a
+                                href="https://makesy.com/blogs/news/psa-start-selling-room-sprays-stat?_pos=1&amp;_psq=room+spray&amp;_ss=e&amp;_v=1.0&amp;_gl=1*120pcjn*_ga*NTk2Nzk5NTE0LjE3MDc0Mzk3NDE.*_ga_G4SKKQD55B*MTcwODYxMTQ1Ny41NC4xLjE3MDg2MTcxNDAuNC4wLjA."
+                                >How to Start Selling Room Sprays</a
+                            >
                         </p>
                         <p>
-                            <a href="https://makesy.com/blogs/news/how-to-build-a-beauty-brand-inspiring-stories-of-success?_pos=5&amp;_psq=beauty&amp;_ss=e&amp;_v=1.0">How to Build a Beauty Brand</a>
+                            <a
+                                href="https://makesy.com/blogs/news/how-to-build-a-beauty-brand-inspiring-stories-of-success?_pos=5&amp;_psq=beauty&amp;_ss=e&amp;_v=1.0"
+                                >How to Build a Beauty Brand</a
+                            >
                         </p>
                         <p>
-                            <a href="https://makesy.com/blogs/news/tagged/blogfilter-type-recipes">Recipes</a>
+                            <a
+                                href="https://makesy.com/blogs/news/tagged/blogfilter-type-recipes"
+                                >Recipes</a
+                            >
                         </p>
                     </div>
                     <span class="nav_state">
-                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
-                            <path d="M5.74023 8.17773L9.76508 12.2026L13.7899 8.17773" stroke="#30261D"/>
+                        <svg
+                            width="20"
+                            height="21"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                        >
+                            <path
+                                d="M5.74023 8.17773L9.76508 12.2026L13.7899 8.17773"
+                                stroke="#30261D"
+                            />
                         </svg>
                     </span>
                 </div>
                 <div class="accordian__menu_items">
                     <h3 class="menu_item">cold process soap notes</h3>
-                    <div class="fragrances-items">
-                        {{ fragrance }}
-                    </div>
+                    <div>{{ fragrance }}</div>
                     <span class="nav_state">
-                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
-                            <path d="M5.74023 8.17773L9.76508 12.2026L13.7899 8.17773" stroke="#30261D"/>
+                        <svg
+                            width="20"
+                            height="21"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                        >
+                            <path
+                                d="M5.74023 8.17773L9.76508 12.2026L13.7899 8.17773"
+                                stroke="#30261D"
+                            />
                         </svg>
                     </span>
-                </div>    
-        
-        </accordian-nav>
-    </div>
-    <script src="script.js"></script>
+                </div>
+            </accordian-nav>
+        </div>
+        <script src="script.js"></script>
     </body>
-
 </html>
